@@ -1,17 +1,17 @@
 import "./App.css";
 import Jaguars from './components/Jaguars.jsx' 
-import modal from './components/modal.jsx'
+import Modal from './components/modal.jsx'
 
 function App() {
   return (
     <div>
-      <Title />
+      <h1>My App</h1>
       <div className="todo_wrapper">
-      <Jaguars></Jaguars>
-      <Jaguars></Jaguars>
-      <Jaguars></Jaguars>
+      <Jaguars> title="Finish Frontend Simplified"</Jaguars>
+      <Jaguars> title="Finish Interview Section" </Jaguars>
+      <Jaguars> title="Land a $100k job" </Jaguars>
     </div>
-    <modal />
+    <Modal />
     </div>
   );
 }
