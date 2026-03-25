@@ -1,9 +1,9 @@
 import './Jaguars.css' 
  
-function Jaguars() {
+function Jaguars(props) {
 return (
-        <div>
-        <h2>College mascot was jaguars</h2>
+        <div className="todo">
+        <h2>{props.title}</h2>
         <span></span>
         <button> Delete</button>
       </div>

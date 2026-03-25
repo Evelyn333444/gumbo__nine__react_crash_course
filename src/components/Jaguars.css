@@ -3,3 +3,12 @@
     border: 1px solid black;
     padding: 16px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.todo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

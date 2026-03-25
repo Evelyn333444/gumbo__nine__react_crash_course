@@ -1,11 +1,14 @@
 //This is what we call "creating a component, which is the first part of react components//
 
-function Todo() {
+function Todo(title) {
+    function deleteToDo() {
+        console.log('deleteTodo()', title.toUpperCase ())
+    }
 return (
         <div>
         <h2>Finish Frontend Simplified</h2>
-        <span></span>
-        <button> Delete</button>
+        <p>{paragraph}</p>
+        <button> onClick={() => deleteToDo} Delete</button>
       </div>
 )
 }
