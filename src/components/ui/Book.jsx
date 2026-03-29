@@ -19,12 +19,11 @@ const Book = ({ book }) => {
                 setImg(image);
             }
         }, 300);
-        };
-        
-    return () => {
+        return () => {
         mountedRef.current = false;
-    })
-
+    });
+        
+        
     return (    
         <div className="book">
             {img ? (

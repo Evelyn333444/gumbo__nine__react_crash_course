@@ -14,7 +14,7 @@ library.add(faBars, faShoppingCart, faTimes, faBolt, faBookOpen, faTags, faStar,
 ReactDOM.render(
     <React.StrictMode>
     <App />
-    </React.StrictMode>
-    document.getElementById('root')
+    </React.StrictMode> ,
+    document.getElementById('root'),
 );
 

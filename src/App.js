@@ -1,5 +1,5 @@
 import "./App_e-commerce.css";
-import Nav from './components/Nav_e-commerce';
+import Nav from './components/Nav';
 import Landing from './components/Landing';
 import Highlights from './components/Highlights';
 import Featured from './components/Featured';
@@ -14,7 +14,7 @@ import BooksInfo from "./pages/BooksInfo";
 import { useState, useEffect } from "react";
 
 
-function App_e-commerce() {
+function App() {
     const [cart, setCart] = useState([]);
 
     function addToCart(book) {
@@ -88,4 +88,4 @@ function App_e-commerce() {
     );
 }
 
-export default App_e-commerce;
+export default App;
