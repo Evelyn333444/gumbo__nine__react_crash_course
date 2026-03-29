@@ -1,21 +1,21 @@
-import React, {useEffect, useState} from "react";
-import axios from "axios";
-import User from "./components/User.jsx";
-import {Link} from "react-router-dom";
+//import React, {useEffect, useState} from "react";
+//import axios from "axios";
+//import User from "./components/User.jsx";
+//import {Link} from "react-router-dom";
 
-function Home() {
-const [users, setUsers] =useState([])
+//function Home() {
+//const [users, setUsers] =useState([])
 
-    async function main() {
-        const { data } = await axios.get("https://jsonplaceholder.typicode.com/users");
-        setUsers(data)
-    }
+//    async function main() {
+//        const { data } = await axios.get("https://jsonplaceholder.typicode.com/users");
+//        setUsers(data)
+//    }
 
-    useEffect(() => {
-        setTimeout(() => {
-            fetchUsers();
-        }, 500);
-    }, []);
+//    useEffect(() => {
+//        setTimeout(() => {
+//            fetchUsers();
+//        }, 500);
+//    }, []);
     
     //const pixels = "2px";
     //This is showing how when you want to style something, you can create variables with long bits of code so you have readable code.
@@ -45,20 +45,20 @@ const [users, setUsers] =useState([])
 //Note: The code in app.jsx do not reflect this code. When making a code similar to this, copy and paste what I have below.
 //Also copy and paste the import section from the top. For the App.jsx, get a mentor to help.
 
-return(
-    <div>
-        {users.map((user) => (
-            <Link to={`/${.userid}`} key={user.id}>
-            <User 
-            id={user.id} 
-            name={user.name} 
-            email={user.email} 
-            username={user.username} 
-            />
-            </Link>
-        ))}
-        </div>
-);
-}
+//return(
+//    <div>
+//        {users.map((user) => (
+//            <Link to={`/${.userid}`} key={user.id}>
+//            <User 
+ //           id={user.id} 
+//            name={user.name} 
+//            email={user.email} 
+//            username={user.username} 
+//            />
+//            </Link>
+//        ))}
+//        </div>
+//);
+//}
 
-export default Home
+//export default Home

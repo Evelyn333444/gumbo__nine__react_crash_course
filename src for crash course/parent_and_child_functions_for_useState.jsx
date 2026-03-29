@@ -3,13 +3,13 @@
 //function Parent() {
     //function clicked() {
         //console.log('parent notified')
-    }
+//    }
 
     //return (
        // <Child clicked={clicked} />
                 // Pass props//
-    );
-}
+//    );
+//}
 
 
 //function Child({clicked}) {
@@ -17,5 +17,5 @@
    // return (
        // <button onClick={clicked}>Child Button</button>
                 //Emit Events//
-    )
-}
+ //   )
+//}
