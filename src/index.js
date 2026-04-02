@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './App_e-commerce.css';
 import App from './App';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -10,10 +10,11 @@ library.add(faBars, faShoppingCart, faTimes, faBolt, faBookOpen, faTags, faStar,
 //Lines 9 and 7 allow us to import icons and actually use them. In this case, they are solid icons.
 //Line 6 is importing fontawesome, similar to what we did in HTML and CSS when incorportating fontawesome
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
     <React.StrictMode>
     <App />
-    </React.StrictMode> ,
-    document.getElementById('root'),
+    </React.StrictMode>
 );
+
 
