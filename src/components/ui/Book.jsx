@@ -1,48 +1,56 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { Price } from "./Price";
 import { Rating } from "./Rating";
 
 export const Book = ({ book }) => {
-    const [img, setImg] = useState();
-
-    const mountedRef = useRef(true);
+    const [img, setImg] = useState(null);
 
     useEffect(() => {
+        let isMounted = true; // local flag
+
         const image = new Image();
         image.src = book.url;
+
         image.onload = () => {
             setTimeout(() => {
-                if (mountedRef.current) {
+                if (isMounted) {
                     setImg(image);
                 }
             }, 300);
         };
-        return () => {
-            mountedRef.current = false;
-        }
-    }, []);
 
+        return () => {
+            isMounted = false; // cleanup
+        };
+    }, [book.url]);
 
     return (
         <div className="book">
             {img ? (
                 <>
-
-                    <Link to={'/books/${book.id}'}>
+                    <Link to={`/books/${book.id}`}>
                         <figure className="book__img--wrapper">
                             <img
-                                src={book.url} alt="" className="book__img" />
-
+                                src={book.url}
+                                alt=""
+                                className="book__img"
+                            />
                         </figure>
                     </Link>
+
                     <div className="book__title">
-                        <Link to={'/books/${book.id}'} className="book__title--link">
+                        <Link
+                            to={`/books/${book.id}`}
+                            className="book__title--link"
+                        >
                             {book.title}
                         </Link>
                     </div>
+
                     <Rating rating={book.rating} />
+
                     <Price
                         salePrice={book.salePrice}
                         originalPrice={book.originalPrice}
@@ -51,12 +59,11 @@ export const Book = ({ book }) => {
             ) : (
                 <>
                     <div className="book__img--skeleton"></div>
-                    <div className="skeleton book____title--skeleton"></div>
+                    <div className="skeleton book__title--skeleton"></div>
                     <div className="skeleton book__rating--skeleton"></div>
                     <div className="skeleton book__price--skeleton"></div>
                 </>
             )}
-
         </div>
     );
 };
