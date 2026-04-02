@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import Logo from '../assets/Library.svg';
 
 const Footer = () => {
     return (
@@ -21,8 +23,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </footer>    
-    );           
+        </footer>
+    );
 }
 
-export default footer;
+export default Footer;

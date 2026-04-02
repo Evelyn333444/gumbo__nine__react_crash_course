@@ -16,3 +16,5 @@ const Highlights2 = () => {
         </section>
     )
 }
+
+export default Highlights2;
