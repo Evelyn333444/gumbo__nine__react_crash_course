@@ -66,7 +66,7 @@ const Cart = ({cart, changeQuantity, removeItem}) => {
                                             </div>
                                         )
                                     ))
-                                }
+                                
                                 <div className="cart__item">
                                     <div className="cart__book">
                                         <img src="assets/crack the coding interview.png" 
@@ -134,6 +134,7 @@ const Cart = ({cart, changeQuantity, removeItem}) => {
                         </button>
                     </div>
                        )}
+                       </div>
             </main>
         </div>
     );
