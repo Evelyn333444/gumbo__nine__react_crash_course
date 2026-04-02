@@ -6,9 +6,9 @@ import Price from '../components/ui/Price';
 import Book from '../components/ui/Book';
 import { useState } from 'react';
 
-const BookInfo = ({ books, addToCart }) => {
-    const BookInfo = useParams();
-    const book = books.find((book) => parseFloat(book.id) === parseFloat(BookInfo.id));
+const BooksInfo = ({ books, addToCart }) => {
+    const BooksInfo = useParams();
+    const book = books.find((book) => parseFloat(book.id) === parseFloat(BooksInfo.id));
 
     function addBookToCart(book) {
         addToCart(book);
@@ -88,4 +88,4 @@ const BookInfo = ({ books, addToCart }) => {
     )
 }
 
-export default BookInfo
+export default BooksInfo
