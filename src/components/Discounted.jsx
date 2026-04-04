@@ -8,7 +8,7 @@ const Discounted = () => {
             <div className="container">
                 <div className="row">
                     <h2>
-                        Discount <span className="blue">Books</span>
+                        Discount <span className="purple">Books</span>
                     </h2>
                 </div>
                 <div className="books">

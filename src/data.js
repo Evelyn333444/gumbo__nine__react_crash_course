@@ -3,7 +3,7 @@ export const books= [
     {
       id: 1,
       title: "Crack the Coding Interview",
-                url: "assets/crack the coding interview.png",
+      url: new URL("./assets/crack the coding interview.png", import.meta.url).href,
       originalPrice: 49.95,
       salePrice: 14.95,
       rating: 4.5,
@@ -11,7 +11,15 @@ export const books= [
     {
       id: 2,
       title: "Atomic Habits",
-      url: "assets/atomic habits.jpg",
+      url: new URL("./assets/atomic habits.jpg", import.meta.url).href,
+      originalPrice: 39,
+      salePrice: null,
+      rating: 5,
+    },
+    {
+      id: 2,
+      title: "Atomic Habits",
+      url: new URL("./assets/atomic habits.jpg", import.meta.url).href,
       originalPrice: 39,
       salePrice: null,
       rating: 5,
@@ -19,7 +27,7 @@ export const books= [
     {
       id: 3,
       title: "Deep Work",
-      url: "assets/deep work.jpeg",
+      url: new URL("./assets/deep work.jpeg", import.meta.url).href,
       originalPrice: 29,
       salePrice: 12,
       rating: 5,
@@ -27,7 +35,7 @@ export const books= [
     {
       id: 4,
       title: "The 10X Rule",
-      url: "assets/book-1.jpeg",
+      url: new URL("./assets/book-1.jpeg", import.meta.url).href,
       originalPrice: 44,
       salePrice: 19,
       rating: 4.5,
@@ -35,7 +43,7 @@ export const books= [
     {
       id: 5,
       title: "Be Obsessed Or Be Average",
-      url: "assets/book-2.jpeg",
+      url: new URL("./assets/book-2.jpeg", import.meta.url).href,
       originalPrice: 32,
       salePrice: 17,
       rating: 4,
@@ -43,7 +51,7 @@ export const books= [
     {
       id: 6,
       title: "Rich Dad Poor Dad",
-      url: "assets/book-3.jpeg",
+      url: new URL("./assets/book-3.jpeg", import.meta.url).href,
       originalPrice: 70,
       salePrice: 12.5,
       rating: 5,
@@ -51,7 +59,7 @@ export const books= [
     {
       id: 7,
       title: "Cashflow Quadrant",
-      url: "assets/book-4.jpeg",
+      url: new URL("./assets/book-4.jpeg", import.meta.url).href,
       originalPrice: 11,
       salePrice: 10,
       rating: 4,
@@ -59,7 +67,7 @@ export const books= [
     {
       id: 8,
       title: "48 Laws of Power",
-      url: "assets/book-5.jpeg",
+      url: new URL("./assets/book-5.jpeg", import.meta.url).href,
       originalPrice: 38,
       salePrice: 17.95,
       rating: 4.5,
@@ -67,7 +75,7 @@ export const books= [
     {
       id: 9,
       title: "The 5 Second Rule",
-      url: "assets/book-6.jpeg",
+      url: new URL("./assets/book-6.jpeg", import.meta.url).href,
       originalPrice: 35,
       salePrice: null,
       rating: 4,
@@ -75,7 +83,7 @@ export const books= [
     {
       id: 10,
       title: "Your Next Five Moves",
-      url: "assets/book-7.jpg",
+      url: new URL("./assets/book-7.jpg", import.meta.url).href,
       originalPrice: 40,
       salePrice: null,
       rating: 4,
@@ -83,7 +91,7 @@ export const books= [
     {
       id: 11,
       title: "Mastery",
-      url: "assets/book-8.jpeg",
+      url: new URL("./assets/book-8.jpeg", import.meta.url).href,
       originalPrice: 30,
       salePrice: null,
       rating: 4.5,

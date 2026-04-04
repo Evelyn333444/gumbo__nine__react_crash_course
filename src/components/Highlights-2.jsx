@@ -5,11 +5,29 @@ const Highlights2 = () => {
         <section id="highlights">
             <div className="container">
                 <div className="row">
-                    <h2 className="section__title">Why choose <span className="blue">Library</span></h2>
+                    <h2 className="section__title">Why choose <span className="purple">Library</span></h2>
                     <div className="highlight__wrapper">
-                        <Highlight icon={<FontAwesomeIcon icon="bolt" />} />
-                        <Highlight icon={<FontAwesomeIcon icon="book-open" />} />
-                        <Highlight icon={<FontAwesomeIcon icon="tags" />} />
+                        <div className= "highlight">
+                            <div className= "highlight__img">
+                                 <Highlight icon={<FontAwesomeIcon icon="bolt" />} />
+                            </div>
+                            <h3 className= "highlight__subtitle">Easy and Quick to Use</h3>
+                            <p className="highlight__para">Get access to the book you purchased online instantly.</p>
+                        </div>
+                        <div className="highlight">
+                            <div className="highlight__img">
+                                <Highlight icon={<FontAwesomeIcon icon="book-open" />} />
+                            </div>
+                            <h3 className="subtitle">10,000+ Books</h3>
+                            <p className="para">Library has books in all your favorite categories.</p>
+                        </div>
+                        <div className="highlight">
+                            <div className="highlight__img">
+                                <Highlight icon={<FontAwesomeIcon icon="tags" />} />
+                            </div>
+                            <h3 className="subtitle">Affordable</h3>
+                            <p className="para">Get your hands on popular books for as little as $10.</p>
+                        </div>
                     </div>
                 </div>
             </div>
